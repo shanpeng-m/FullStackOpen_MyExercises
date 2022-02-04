@@ -1,0 +1,14 @@
+title 0.6: New note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+receive data from browser
+end note
+
+server-->browser: STATUS code 201
+
+note over browser:
+browser executes the event handler
+that renders notes to display
+end note
